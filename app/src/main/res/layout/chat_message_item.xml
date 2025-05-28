@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/textTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 May 2025 12:00 AM"
+        android:textSize="10sp"
+        android:textColor="#999999"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Message Bubble -->
+    <LinearLayout
+        android:id="@+id/messageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_message_bubble"
+        android:elevation="1dp" />
+
+</LinearLayout>

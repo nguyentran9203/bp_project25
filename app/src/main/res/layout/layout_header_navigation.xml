@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF">
+
+    <!-- Header with user icon and Artist Dashboard button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/btnArtistDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#84e56f "
+            android:textColor="@color/black"
+            android:text="Artist Dashboard" />
+
+        <ImageView
+            android:id="@+id/profileBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Navigation Links -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/commissionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#84e56f "
+            android:textColor="@color/black"
+            android:text="Commissions" />
+
+        <Button
+            android:id="@+id/portfolioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portfolio"
+            android:backgroundTint="#84e56f "
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+</LinearLayout>

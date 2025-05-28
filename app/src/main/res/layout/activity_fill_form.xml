@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commission Form"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonOpenCalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#84e56f "
+            android:textColor="@color/black"
+            android:text="Quote Calculator" />
+
+        <!-- How will you be using this work? (required) -->
+        <TextView
+            android:text="How will you be using this work? *"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton android:id="@+id/radioUsageChooseOne"
+                android:text="Personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/radioUsageChooseTwo"
+                android:text="Commercial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton android:id="@+id/radioUsageOther"
+                android:text="Other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- References and files -->
+        <TextView
+            android:text="References and files"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Character reference sheets, PSD for rigging, mood boards, sample of poses / angles / expressions, any other relevant files or links."
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonUploadFile"
+            android:text="Upload File"
+            android:backgroundTint="#84e56f "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonAddLink"
+            android:text="Add Link"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#84e56f "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Show list of uploaded files/links -->
+        <LinearLayout
+            android:id="@+id/layoutUploadedItems"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- May I publicly stream / share the work with credit? (required) -->
+        <TextView
+            android:text="May I publicly stream / share the work with credit? *"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton android:id="@+id/radioShareYes"
+                android:text="Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton android:id="@+id/radioShareOther"
+                android:text="No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <!-- Hard deadline -->
+        <TextView
+            android:text="Do you have a hard deadline? (Rush order fees may apply.)"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonPickDate"
+            android:text="Pick a date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#84e56f "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textPickedDate"
+            android:layout_marginTop="4dp"
+            android:text="No date chosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Extra info -->
+        <TextView
+            android:text="Extra info"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editExtraInfo"
+            android:hint="Pose, traits, multiple characters, add-ons, etc."
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:text="Submit"
+            android:backgroundTint="#84e56f "
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+
+</ScrollView>

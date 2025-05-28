@@ -1,0 +1,9 @@
+<resources>
+    <!-- Spinner entries for commission types -->
+    <string-array name="commission_types">
+        <item>Bust ($30)</item>
+        <item>Half body ($45)</item>
+        <item>Full body ($60) </item>
+        <item> Character Design ($50) </item>
+    </string-array>
+</resources>

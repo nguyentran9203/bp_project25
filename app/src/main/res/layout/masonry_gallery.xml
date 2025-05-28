@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Column 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="4dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="253dp"
+                android:contentDescription="Masonry Image 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/character_illustration" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="285dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Masonry Image 2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/character_illustration_3" />
+        </LinearLayout>
+
+        <!-- Column 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="4dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="497dp"
+                android:contentDescription="Masonry Image 3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/character_illustration_4" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="209dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Masonry Image 4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/character_design_3" />
+        </LinearLayout>
+
+        <!-- Column 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="4dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="325dp"
+                android:contentDescription="Masonry Image 5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/character_illustration_2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="251dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Masonry Image 6"
+                android:scaleType="centerCrop"
+                android:src="@drawable/character_design_2" />
+        </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>

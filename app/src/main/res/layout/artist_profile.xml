@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+<include layout="@layout/header_1"/>
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp">
+
+            <!-- Horizontal layout for image + artist display name -->
+            <LinearLayout
+                android:layout_width="364dp"
+                android:layout_height="127dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/artistImage"
+                    android:layout_width="95dp"
+                    android:layout_height="89dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Artist Image"
+
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/your_artist_image" />  <!-- Optional circle background -->
+
+                <TextView
+                    android:id="@+id/artistDisplayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist Display Name"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/artistUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" @artist.username "
+                    android:textColor="#666666" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Bio Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/artistBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bio"
+                android:paddingBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_link1"
+                    android:paddingRight="8dp"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_link1"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/editProfileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="#666666"/>
+            <Button
+                android:id="@+id/editServiceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Services"
+
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="#666666"/>
+        </LinearLayout>
+
+        <!-- Commissions Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ratingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.7 ★ (15 reviews)"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/commissionsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#84e56f "
+                android:textColor="@color/black"
+                android:text="Commissions" />
+
+            <Button
+                android:id="@+id/portfolioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#84e56f "
+                android:textColor="@color/black"
+                android:text="Portfolio"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+        <include layout="@layout/message_footer"/>
+    </LinearLayout>
+</ScrollView>

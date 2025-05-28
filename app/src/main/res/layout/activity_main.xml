@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <include layout="@layout/header_1" />
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pastelly"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="4dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom art commissions made easy. On the go"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:paddingBottom="12dp" />
+
+        <!-- Hero Image -->
+        <ImageView
+            android:id="@+id/heroImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/character_design"
+            android:contentDescription="Hero Image"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Hero Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hero: Character Design Showcase"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="12dp" />
+
+        <!-- CTA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse services"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <!-- Tag Pills -->
+        <LinearLayout
+            android:id="@+id/tagPillContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Design"
+                android:background="@drawable/tag_pill_background"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="14sp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:text="Illustration"
+                android:background="@drawable/tag_pill_background"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="14sp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:text="All Categories"
+                android:background="@drawable/tag_pill_background"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="14sp"
+                android:layout_height="48dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+
+        <!-- Commission Listing -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Categories"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Listings -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- First Image with Subtitle -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="195dp"
+                        android:layout_height="171dp"
+                        android:layout_margin="4dp"
+                        android:contentDescription="Gallery Image 1"
+                        android:src="@drawable/character_design_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Character Design                     5★"
+                        android:textSize="14sp"
+                        android:textColor="#666666" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" @artist.username"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+                </LinearLayout>
+
+                <!-- Second Image with Subtitle -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="254dp"
+                        android:layout_height="241dp"
+                        android:layout_margin="4dp"
+                        android:contentDescription="Gallery Image 2"
+                        android:src="@drawable/character_illustration" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anime Illustration        5 ★"
+                        android:textSize="14sp"
+                        android:textColor="#666666" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" @artist2.username"
+                        android:textSize="12sp"
+                        android:textColor="#666666" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Section Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Showcases"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="24dp"/>
+       <include layout="@layout/message_footer"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,32 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">Pastelly</string>
+
+    <!-- Spinner prompt -->
+    <string name="select_type">Select commission type</string>
+
+
+    <!-- Commission type label -->
+    <string name="commission_type_label">1. Commission Type*</string>
+
+    <!-- Add ons label -->
+    <string name="add_ons_label">2. Add ons (optional)</string>
+
+    <!-- Details label -->
+    <string name="details_label">3. Rate amount of details (1 - 10)</string>
+
+    <!-- Number of characters label -->
+    <string name="characters_label">4. Number of characters (optional)</string>
+
+    <!-- Total label -->
+    <string name="total_label">Total</string>
+
+    <!-- Checkbox texts -->
+    <string name="additional_character">Additional character ($X per extra)</string>
+    <string name="complex_background">Complex background ($X)</string>
+    <string name="props_pets">Props / Pets ($X)</string>
+    <string name="priority_delivery">Priority delivery / Rush fee ($X)</string>
+    <string name="commercial_use">Commercial Use (+100%)</string>
+    <string name="attach_file">Attach a file</string>
+
+</resources>

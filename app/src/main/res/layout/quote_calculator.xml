@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".QuoteCalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quote Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 1. Commission Type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Commission Type*"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/commissionTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/commission_types"
+            android:minHeight="48dp"
+            android:prompt="@string/select_type" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 2. Add ons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Add ons (optional)"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/additionalCharacterCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional character ($20)"/>
+
+        <CheckBox
+            android:id="@+id/complexBackgroundCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complex background ($30)"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/propsPetsCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Props / Pets ($15)"/>
+
+        <CheckBox
+            android:id="@+id/priorityDeliveryCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Priority delivery / Rush fee ($25)"/>
+
+        <CheckBox
+            android:id="@+id/commercialUseCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Commercial Use (+100%)"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 3. Rate amount of details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Rate amount of details (1 - 10)"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/detailsSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="9"
+            android:progress="4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+        </LinearLayout>
+
+        <!-- 4. Number of characters -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Number of characters (optional)"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/charactersSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="9"
+            android:progress="0" />  <!-- Optional: set default progress -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+        </LinearLayout>
+
+        <!-- Total -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/totalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$99.99"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

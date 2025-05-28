@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/clientNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="24dp" />
+
+        <CheckBox
+            android:id="@+id/checkStep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 1: Initial Sketch" />
+
+        <CheckBox
+            android:id="@+id/checkStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 2: Line Art" />
+
+        <CheckBox
+            android:id="@+id/checkStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 3: Coloring" />
+
+        <CheckBox
+            android:id="@+id/checkStep4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 4: Final Touches" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Progress"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

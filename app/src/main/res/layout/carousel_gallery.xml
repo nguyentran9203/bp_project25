@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Big Hero Image on top -->
+
+    <!-- Static smaller images below -->
+
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        android:contentDescription="Hero Image"
+        android:rotationX="0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/character_illustration_4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="151dp"
+            android:layout_height="236dp"
+            android:layout_margin="4dp"
+            android:contentDescription="Gallery Image 1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/character_illustration_2" />
+
+        <ImageView
+            android:layout_width="147dp"
+            android:layout_height="224dp"
+            android:layout_margin="4dp"
+            android:contentDescription="Gallery Image 2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/character_illustration_3" />
+
+        <ImageView
+            android:layout_width="159dp"
+            android:layout_height="219dp"
+            android:layout_margin="4dp"
+            android:contentDescription="Gallery Image 3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/character_illustration" />
+
+    </LinearLayout>
+
+</LinearLayout>
